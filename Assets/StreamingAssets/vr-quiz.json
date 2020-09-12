@@ -1,0 +1,137 @@
+{
+	"interactions":
+		[
+			{
+				"time": 4,
+				"title": "Bienvenido a las Líneas de Nazca, esperamos disfrutes el tour.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 10,
+				"title": "Las Líneas de Nazca son una serie de caminos trazados en la superficie terrestre que ocupan una basta extensión ubicada en el desierto de Nazca, localizado en el departamento de Ica en Perú.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 16,
+				"title": "El primer avistamiento registrado de las Líneas de Nazca data del año 1547, de la mano del conquistador y cronista Pedro Cieza de León.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 22,
+				"title": "En 1932 los arqueólogos Julio César Tello y Toribio Mejía Xesspe realizaron la primera investigación científica sobre las líneas.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 28,
+				"title": "Paul Kosok, antropólogo norteamericano, investigó las líneas de Nazca desde la década de 1930 hasta fines de los 50.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 34,
+				"title": "Después que Kosok regresó a su país en 1949, su compañera la alemana María Reiche siguió sus investigaciones sobre las líneas de Nazca.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 40,
+				"title": "Reiche dedicó el resto de su vida al estudio, conservación y difusión de este legado de la cultura nazca.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 46,
+				"title": "Ahora realizaremos alguna preguntas de verdadero o falso, buena suerte.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 52,
+				"title": "Las Líneas de Nazca se ubican en Moquegua.",
+				"correct": false,
+				"type" : 0
+			},
+			{
+				"time": 58,
+				"title": "La primera referencia a dichas figuras pertenece al conquistador Pedro Cieza de León",
+				"correct": true,
+				"type" : 0
+			},
+			{
+				"time": 64,
+				"title": "Paul Kosok y Toribio Mejía realizaron la primera investigación científica de las líneas.",
+				"correct": false,
+				"type" : 0
+			},
+			{
+				"time": 70,
+				"title": "Maria Reiche dedicó su vida al estudio de las Líneas de Nazca.",
+				"correct": true,
+				"type" : 0
+			},
+			{
+				"time": 76,
+				"title": "A continuación hablaremos de las geoglifos más llamativos.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 82,
+				"title": "El colibrí, entre sus dos alas hay una distancia de unos 66 metros. Esta figura es un homenaje a un dios volador para evitar la ausencia de lluvias.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 88,
+				"title": "El mono tiene una cola en forma de espiral y nueve dedos, y su tamaño es de 135 metros.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 94,
+				"title": "La araña, mide unos 46 metros de largo y se cree que se trazó para evitar las sequías.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 100,
+				"title": "El pájaro gigante mide 300 metros de largo y 54 de ancho. Tiene el cuello con forma de culebra y su pico apunta directamente hacia el punto en el que sale el sol en el mes de junio.",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 106,
+				"title": "Nuevamente, se realizaran alguna preguntas de verdadero y falso",
+				"correct": true,
+				"type" : 1
+			},
+			{
+				"time": 112,
+				"title": "El colibrí es un homenaje a un dios del mar.",
+				"correct": false,
+				"type" : 0
+			},
+			{
+				"time": 118,
+				"title": "El mono tiene un tamaño de 135 metros.",
+				"correct": true,
+				"type" : 0
+			},
+			{
+				"time": 124,
+				"title": "La araña se trazó para evitar sequias.",
+				"correct": true,
+				"type" : 0
+			},
+			{
+				"time": 130,
+				"title": "El pájaro gigante apunta hacia donde sale el sol el mes de julio.",
+				"correct": false,
+				"type" : 0
+			}
+		]
+}
