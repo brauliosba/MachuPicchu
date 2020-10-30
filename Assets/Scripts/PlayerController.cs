@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         disabelPanels();
         previousPoint = 0;
         currentPoint = 0;
-        nextPoint = 1;
+        nextPoint = 12;
     }
 
     void disabelPanels()
@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
                 nextPoint = int.Parse(temp.nextPoint.name);
             }
             speed = 0;
-            panelManager.GetComponent<PanelManager>().panelControl(temp.type, transform.position);
+            panelManager.GetComponent<PanelManager>().panelControl(temp.type, temp.numberInteraction, transform.position);
         }
     }
 }
