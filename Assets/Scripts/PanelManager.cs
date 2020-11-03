@@ -13,6 +13,8 @@ public class Texts
 
 public class PanelManager : MonoBehaviour
 {
+    public GameObject player;
+
     public GameObject warningPanel;
 
     public GameObject textPanel;
@@ -51,7 +53,7 @@ public class PanelManager : MonoBehaviour
         }
     }
 
-    public void panelControl(string type, string number, Vector3 position)
+    public void panelControl(string type, string number)
     {
         if (number != "-") { interactionNumber = int.Parse(number) - 1; } 
         switch (type)
@@ -61,22 +63,24 @@ public class PanelManager : MonoBehaviour
                 audioSource.Play();
                 break;
             case "text":
-                textPanel.transform.position = position + new Vector3(0, 1.8f, 8.0f);
                 textTitle.text = texts.titles[interactionNumber];
                 textDescription.text = texts.phrases[interactionNumber];
                 textPanel.SetActive(true);
                 break;
             case "image":
                 image.sprite = sprites[interactionNumber];
-                imagePanel.transform.position = position + new Vector3(0, 1.8f, 8.0f);
                 imageTitle.text = imagesDescriptions.titles[interactionNumber];
                 imageDescription.text = imagesDescriptions.phrases[interactionNumber];
                 imagePanel.SetActive(true);
                 break;
             case "question":
-                questionPanel.transform.position = position + new Vector3(0, 1.8f, 8.0f);
+                player.GetComponent<PlayerController>().speed = 0;
                 questionPanel.SetActive(true);
                 break;
+            case "release":
+                player.GetComponent<PlayerController>().disabelPanels();
+                break;
+            /*
             case "response":
                 if (previousResponse)
                 {
@@ -93,6 +97,7 @@ public class PanelManager : MonoBehaviour
                 warningPanel.transform.position = position + new Vector3(0, 1.5f, 3.0f);
                 warningPanel.SetActive(true);
                 break;
+            */
             default:
                 break;
         }
@@ -102,6 +107,7 @@ public class PanelManager : MonoBehaviour
     {
         previousResponse = response;
         questionPanel.SetActive(false);
+        player.GetComponent<PlayerController>().speed = 7.0f;
     }
 
     public void QuitGame()
