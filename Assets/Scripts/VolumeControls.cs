@@ -10,9 +10,14 @@ public class VolumeControls : MonoBehaviour
     public AudioSource audioSource;
     public Toggle muteToggle;
     // Start is called before the first frame update
+
+    private float currentVolume;
+
+    [SerializeField] private Slider volumeSlider;
     void Start()
     {
-
+        volumeSlider.value = audioSource.volume;
+        currentVolume = audioSource.volume;
     }
 
     public void volumeUp(){
@@ -32,9 +37,17 @@ public class VolumeControls : MonoBehaviour
                     else audioSource.volume = audioSource.volume - 0.1f;
     }
 
+    void UpdateSlider(){
+        if (volumeSlider.value != currentVolume){
+            currentVolume = volumeSlider.value;
+            audioSource.volume = currentVolume;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        UpdateSlider();
         if (Input.anyKeyDown)
         {
             switch (Input.inputString)
@@ -53,9 +66,13 @@ public class VolumeControls : MonoBehaviour
                     break;
                 case "-":
                     volumeDown();
+                    currentVolume = audioSource.volume;
+                    volumeSlider.value = currentVolume;
                     break;
                 case "+":
                     volumeUp();
+                    currentVolume = audioSource.volume;
+                    volumeSlider.value = currentVolume;
                     break;
             }
         }

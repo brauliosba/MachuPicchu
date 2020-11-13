@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public GameObject warningPanel;
     public GameObject panelManager;
 
+    public GameObject pausePanel;
+
     private void Start()
     {
         disabelPanels();
@@ -29,6 +31,11 @@ public class PlayerController : MonoBehaviour
         imagePanel.SetActive(false);
         questionPanel.SetActive(false);
         warningPanel.SetActive(false);
+        pausePanel.SetActive(false);
+    }
+
+    public void disablePausePanel(){
+        pausePanel.SetActive(false);
     }
 
     void Update()
@@ -104,6 +111,9 @@ public class PlayerController : MonoBehaviour
                 nextPoint = previousPoint;
             }
             transform.position = Vector3.MoveTowards(transform.position, Waypoints[nextPoint].position, speed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.Escape)){
+            pausePanel.SetActive(true);
         }
     }
 
