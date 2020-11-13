@@ -5,9 +5,9 @@ using UnityEngine;
 public class MouseHandler : MonoBehaviour
 {
     // horizontal rotation speed
-    public float horizontalSpeed = 1f;
+    public float horizontalSpeed = 0.7f;
     // vertical rotation speed
-    public float verticalSpeed = 1f;
+    public float verticalSpeed = 0.7f;
     private float xRotation = 0.0f;
     private float yRotation = 0.0f;
     public Camera cam;
